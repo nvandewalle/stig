@@ -11,7 +11,7 @@ param linuxFxVersion string = 'php|7.4'
 @description('Location for all resources.')
 param location string = resourceGroup().location
 
-var webAppPortalName = '${webAppName}-webapp'
+var webAppPortalName = '${webAppName}-wapp'
 var appServicePlanName = 'AppServicePlan-${webAppName}'
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
